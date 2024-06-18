@@ -6,25 +6,41 @@ const textoResultados = document.querySelector(".texto-resultados");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Qual a missão da empresa Brink Park Paranaguá?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Encantar as crianças e seus pais para gerar alegria e lucro",
+            "Encantar  com a experiencia únicas e inesqueciveis, despertar alegria, felicidade e o desejo de voltar",
+            "Encantar as crianças a ponto que o mesmo deseje voltar sempre e com isso fidelizar cliente"
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Qual a visão da empresa Brink Park Paranaguá?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Ser reconhecido como a empresa exemplo no mercado de Paranaguá",
+            "Se tornar a empresa mais invejada de Paranguá",
+            "Ser reconhecido como o destino preferido das familias de Paranaguá"
         ]
-    }
+    },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Sobre nossos Valores, qual deles se encaixa no perfil?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Atenção nos detalhes, organização e pontualidade",
+            "Encantamento, apatico e introvertido",
+            "Pontual, tranquilidade e educação"
+
         ]
     },
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta( ) {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+
+}
+
+mostraPergunta();
+
 
